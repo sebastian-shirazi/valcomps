@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "valcomps"
+version = "1.0.0"
+description = "Valorant 5-stack comp builder"
+authors = ["Sebastian Shirazi"]
+readme = "README.md"
+packages = [
+    {include = "valcomps"}
+]
+
+[tool.poetry.dependencies]
+python3 = "^3.14"
+Django = "^6.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.3"
+pytest-django = "^4.5"
+black = "^24.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
